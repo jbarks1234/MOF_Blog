@@ -22,7 +22,7 @@ We did also attempt using a 3D-CNN but because a substantial quantity of MOFs ha
 
 <!-- ![model](https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png) -->
 
-<img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png">
+<img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png" style="height:100px; width:100px;"/>
 
 Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.
 
