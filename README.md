@@ -60,7 +60,10 @@ We also tested MDS against other dimensional reduction methods, but we ultimatel
 
 We used the CoRE MOF 2019 dataset with expanded geometric properties such as henry’s constant, and surface area for our testing. The dataset contains over 14,000 MOF samples which also makes transfer learning the preferred approach since it excels at problems with low training samples. We used a few different methods of parsing the MOFs with varied results.
 
-|![examples](https://i.imgur.com/Jsjq8ZF.png)|
+<!-- |![examples](https://i.imgur.com/Jsjq8ZF.png)|
+|:--:| -->
+
+|<img src="https://i.imgur.com/Jsjq8ZF.png" width="700"/>|
 |:--:|
 
 
