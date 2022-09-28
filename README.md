@@ -40,8 +40,18 @@ We did also attempt using a 3D-CNN but because a substantial quantity of MOFs ha
 
 	
 To solve this issue we applied multidimensional scaling (MDS) to the 3D coordinates. This resulted in a 2D matrix of the atom positions which hopefully preserves the geometric properties of the original 3D MOF. While some information is definitely lost from the 3D to 2D reduction, our hope is that it is small enough to not affect our predictions. The formula for classical MDS is as follows:
-	
+
+\begin{equation} 
+\label{mds}
+    Stress_D(x_1,x_2,...,x_N) = \left(\sum_{x \neq j=1,...,N}(d_{ij}-||x_i-x_j||)^2\right)^{1/2}
+\end{equation}
+
 Where:
+
+\begin{equation} 
+\label{d}
+    d_{ij} = \sqrt{\sum^p_{k=1}\left(x_{ij}-x_{jk}\right)^2}
+\end{equation}
 
 And X is a configuration of points in low dimensional space p. D is a distance matrix that approximates the interpoint distances of X, and StressD is a residual sum of squares.
 
