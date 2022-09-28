@@ -6,7 +6,9 @@ description: by Jacob Barkovitch
 comments: true
 tags: materials science, neuralnets, dimensionality reduction, transfer learning
 ---
-
+img {
+background-color: rgba(255, 92, 53, 0.75);
+}
 With the increase in global transportation and shipping, the need for efficient and safe gas transportation is more important than ever. One method of accomplishing this is through [metal-organic frameworks](https://en.wikipedia.org/wiki/Metal-organic_framework) (MOFs). MOFs are a class of crystalline materials with extremely high porosity, inner surface area, and flexibility in network topologies. MOFs are composed of positively charged metal ions connected by organic linkers. This unique composition gives MOFs an incredibly large inner surface area ideal for storing or separating gases.
 
 Currently there are more than [90,000 different types of MOFs](https://www.nanowerk.com/mof-metal-organic-framework.php) that scientists have synthesized. The problem is that trying to create new MOFs from scratch is time consuming and expensive. The physical process involves chemists combining many different chemicals in a beaker and letting the mixture crystalize for several hours or sometimes even [days](https://www.intechopen.com/chapters/71021). At the end of this process if they’re lucky, they’ll have a new MOF; otherwise, they’ll need to restart the whole process. By using machine learning to generate likely properties of MOFs based on the MOFs currently in existence, scientists can get a head start on synthesizing new ones.
@@ -19,7 +21,7 @@ We did also attempt using a 3D-CNN but because a substantial quantity of MOFs ha
 
 <!-- ![model](https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png) -->
 
-<img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png" style="background-color:red;">
+<img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png">
 
 Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.
 
