@@ -64,10 +64,10 @@ We used the CoRE MOF 2019 dataset with expanded geometric properties such as hen
 <!-- |![examples](https://i.imgur.com/Jsjq8ZF.png)|
 |:--:| -->
 
-<p align="center">
-|<img src="https://i.imgur.com/Jsjq8ZF.png" width="700"/>|
+
+|<p align="center"><img src="https://i.imgur.com/Jsjq8ZF.png" width="700"/></p>|
 |:--:|
-</p>
+
 
 The first method was just passing in the direct MOF coordinates (right). This resulted in low prediction accuracy so we instead passed in the MOF with coordinates outside the unit cell concatenated on as well (middle). This had better results, but still not enough to make the model plausible. The last method we tried was passing in the distance matrix of the MOF to MDS (left). This had the best results with an average error of 85% and a median of 45% but with an error that high we could not publish the results in an academic conference.
 
