@@ -16,6 +16,9 @@ One aspect of this machine learning approach is trying to predict geometric prop
 Our team at Binghamton University (Shehtab Zaman, Kenneth Chiu, Michael J. Lawler and myself) undertook the task of developing this model. We decided to use a 2-dimensional Convolutional Neural Network (CNN). More precisely the [InceptionV3](https://arxiv.org/abs/1512.00567v3) architecture with transfer learning activated as seen in Fig. 1. We decided on this model because of its pre-trained nature and high-performance on ImageNet, a dataset of 1 million labeled images. The problem is that MOF coordinates are in 3-dimensional space so in order to utilize a 2D CNN we need a dimensionality reduction algorithm which can preserve the geometric properties that are represented in the 3D space.
 
 We did also attempt using a 3D-CNN but because a substantial quantity of MOFs had atom counts in the thousands, a 3D-CNN would be largely inefficient. We also hoped to utilize the pre-trained latent space of the InceptionV3 architecture which excels at recognizing tiny differences in edges and features of the images.
+
+![alt text](https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png)
+
 Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.
 
 To solve this issue we applied multidimensional scaling (MDS) to the 3D coordinates. This resulted in a 2D matrix of the atom positions which hopefully preserves the geometric properties of the original 3D MOF. While some information is definitely lost from the 3D to 2D reduction, our hope is that it is small enough to not affect our predictions. The formula for classical MDS is as follows:
