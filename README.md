@@ -6,12 +6,12 @@ description: by Jacob Barkovitch
 comments: true
 tags: materials science, neuralnets, dimensionality reduction, transfer learning
 ---
-img {
+<!-- img {
 background-color: rgba(255, 92, 53, 0.75);
 height:100px;
 }
 
-something{background-color: white;}
+something{background-color: white;} -->
 
 With the increase in global transportation and shipping, the need for efficient and safe gas transportation is more important than ever. One method of accomplishing this is through [metal-organic frameworks](https://en.wikipedia.org/wiki/Metal-organic_framework) (MOFs). MOFs are a class of crystalline materials with extremely high porosity, inner surface area, and flexibility in network topologies. MOFs are composed of positively charged metal ions connected by organic linkers. This unique composition gives MOFs an incredibly large inner surface area ideal for storing or separating gases.
 
@@ -27,8 +27,8 @@ We did also attempt using a 3D-CNN but because a substantial quantity of MOFs ha
 
 <!-- <img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png" style="height:100px; width:100px;"/> -->
 
-<div class='something'>
-<img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png" id="bg">
+<div style="background-color:red">
+<img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png">
 </div>
 
 Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.
