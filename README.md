@@ -47,6 +47,9 @@ And X is a configuration of points in low dimensional space p. D is a distance m
 
 We also tested MDS against other dimensional reduction methods, but we ultimately decided MDS was the best based on our testing with synthetic 3D spheres. Below is a figure of MDS on a 3D MOF sample:
 
+|![mds](https://i.imgur.com/Dq3smEu.png)|
+|:--:|
+
 We used the CoRE MOF 2019 dataset with expanded geometric properties such as henry’s constant, and surface area for our testing. The dataset contains over 14,000 MOF samples which also makes transfer learning the preferred approach since it excels at problems with low training samples. We used a few different methods of parsing the MOFs with varied results.
 
 The first method was just passing in the direct MOF coordinates (right). This resulted in low prediction accuracy so we instead passed in the MOF with coordinates outside the unit cell concatenated on as well (middle). This had better results, but still not enough to make the model plausible. The last method we tried was passing in the distance matrix of the MOF to MDS (left). This had the best results with an average error of 85% and a median of 45% but with an error that high we could not publish the results in an academic conference.
