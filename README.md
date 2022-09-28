@@ -36,8 +36,6 @@ We did also attempt using a 3D-CNN but because a substantial quantity of MOFs ha
 |:--:|
 | <b>Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.</b>|
 
-<!-- <img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png" style="height:100px; width:100px;"/> -->
-
 	
 To solve this issue we applied multidimensional scaling (MDS) to the 3D coordinates. This resulted in a 2D matrix of the atom positions which hopefully preserves the geometric properties of the original 3D MOF. While some information is definitely lost from the 3D to 2D reduction, our hope is that it is small enough to not affect our predictions. The formula for classical MDS is as follows:
 
@@ -68,7 +66,7 @@ We used the CoRE MOF 2019 dataset with expanded geometric properties such as hen
 
 The first method was just passing in the direct MOF coordinates (right). This resulted in low prediction accuracy so we instead passed in the MOF with coordinates outside the unit cell concatenated on as well (middle). This had better results, but still not enough to make the model plausible. The last method we tried was passing in the distance matrix of the MOF to MDS (left). This had the best results with an average error of 85% and a median of 45% but with an error that high we could not publish the results in an academic conference.
 
-|![results](https://i.imgur.com/0ArYOSs.png)|
+|<img src="https://i.imgur.com/0ArYOSs.png" width="600"/>|
 |:--:|
 
 We still felt like our work was worthwhile so we decided to showcase it in this report so that other researchers might be able to discover a new approach to our methods. Some potential ideas that we thought of but did not pursue were using a 2D image of the full 3D MOF from different points of view with partial alpha values to hopefully represent areas of low density atoms that the model could recognize. If any interested researchers out there would like to build off our work, it is available at: (github link).
