@@ -13,14 +13,14 @@ height:100px;
 
 something{background-color: white;} -->
 
-code[class*="language-"], pre[class*="language-"]
+<!-- code[class*="language-"], pre[class*="language-"]
   border-radius: 6px
   text-shadow: 0 1px #14161800 !important
   background: #000000 !important
   span.token.operator
     background: none
   span.token.keyword
-    color: #866cba
+    color: #866cba -->
 
 With the increase in global transportation and shipping, the need for efficient and safe gas transportation is more important than ever. One method of accomplishing this is through [metal-organic frameworks](https://en.wikipedia.org/wiki/Metal-organic_framework) (MOFs). MOFs are a class of crystalline materials with extremely high porosity, inner surface area, and flexibility in network topologies. MOFs are composed of positively charged metal ions connected by organic linkers. This unique composition gives MOFs an incredibly large inner surface area ideal for storing or separating gases.
 
