@@ -32,7 +32,9 @@ Our team at Binghamton University (Shehtab Zaman, Kenneth Chiu, Michael J. Lawle
 
 We did also attempt using a 3D-CNN but because a substantial quantity of MOFs had atom counts in the thousands, a 3D-CNN would be largely inefficient. We also hoped to utilize the pre-trained latent space of the InceptionV3 architecture which excels at recognizing tiny differences in edges and features of the images.
 
-![model](https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png)
+|![model](https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png)|
+|:--:|
+| <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b>|
 
 <!-- <img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png" style="height:100px; width:100px;"/> -->
 
