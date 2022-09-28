@@ -27,7 +27,7 @@ We did also attempt using a 3D-CNN but because a substantial quantity of MOFs ha
 
 <!-- <img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png" style="height:100px; width:100px;"/> -->
 
-<div style="background-color:red;">
+<div style="#FF0000">
 <img src="https://production-media.paperswithcode.com/methods/inceptionv3onc--oview_vjAbOfw.png">
 </div>
 
