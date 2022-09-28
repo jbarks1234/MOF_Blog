@@ -73,3 +73,15 @@ The first method was just passing in the direct MOF coordinates (right). This re
 
 
 We still felt like our work was worthwhile so we decided to showcase it in this report so that other researchers might be able to discover a new approach to our methods. Some potential ideas that we thought of but did not pursue were using a 2D image of the full 3D MOF from different points of view with partial alpha values to hopefully represent areas of low density atoms that the model could recognize. If any interested researchers out there would like to build off our work, it is available at: (github link).
+
+### Acknowledgments
+This material is based on work supported by the National Science Foundation under grant No. OAC-1940243.
+
+### Bibliography
+
+Papers with code—Inception-v3 explained. (n.d.). Retrieved March 24, 2022, from https://paperswithcode.com/method/inception-v3
+
+Berger, M. (n.d.). MOF Metal Organic Framework—Definition, fabrication and use. Nanowerk. Retrieved March 24, 2022, from https://www.nanowerk.com/mof-metal-organic-framework.php
+
+Han, Y., Yang, H., & Guo, X. (2020). Synthesis Methods and Crystallization of MOFs. In (Ed.), Synthesis Methods and Crystallization. IntechOpen. https://doi.org/10.5772/intechopen.90435
+
