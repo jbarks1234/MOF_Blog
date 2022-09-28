@@ -72,7 +72,7 @@ The first method was just passing in the direct MOF coordinates (right). This re
 <p align="center"><img src="https://i.imgur.com/0ArYOSs.png" width="500"/></p>
 
 
-We still felt like our work was worthwhile so we decided to showcase it in this report so that other researchers might be able to discover a new approach to our methods. Some potential ideas that we thought of but did not pursue were using a 2D image of the full 3D MOF from different points of view with partial alpha values to hopefully represent areas of low density atoms that the model could recognize. If any interested researchers out there would like to build off our work, it is available at: (github link).
+We still felt like our work was worthwhile so we decided to showcase it in this report so that other researchers might be able to discover a new approach to our methods. Some potential ideas that we thought of but did not pursue were using a 2D image of the full 3D MOF from different points of view with partial alpha values to hopefully represent areas of low density atoms that the model could recognize. If any interested researchers out there would like to build off our work, it is available at: https://github.com/szaman19/Materials-Search.
 
 ### Acknowledgments
 This material is based on work supported by the National Science Foundation under grant No. OAC-1940243.
