@@ -63,8 +63,12 @@ We also tested MDS against other dimensional reduction methods, but we ultimatel
 We used the CoRE MOF 2019 dataset with expanded geometric properties such as henry’s constant, and surface area for our testing. The dataset contains over 14,000 MOF samples which also makes transfer learning the preferred approach since it excels at problems with low training samples. We used a few different methods of parsing the MOFs with varied results.
 
 |![examples](https://i.imgur.com/Jsjq8ZF.png)|
+|:--:|
 
 
 The first method was just passing in the direct MOF coordinates (right). This resulted in low prediction accuracy so we instead passed in the MOF with coordinates outside the unit cell concatenated on as well (middle). This had better results, but still not enough to make the model plausible. The last method we tried was passing in the distance matrix of the MOF to MDS (left). This had the best results with an average error of 85% and a median of 45% but with an error that high we could not publish the results in an academic conference.
+
+|![results](https://i.imgur.com/0ArYOSs.png)|
+|:--:|
 
 We still felt like our work was worthwhile so we decided to showcase it in this report so that other researchers might be able to discover a new approach to our methods. Some potential ideas that we thought of but did not pursue were using a 2D image of the full 3D MOF from different points of view with partial alpha values to hopefully represent areas of low density atoms that the model could recognize. If any interested researchers out there would like to build off our work, it is available at: (github link).
