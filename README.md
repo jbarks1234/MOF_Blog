@@ -32,10 +32,11 @@ Our team at Binghamton University (Shehtab Zaman, Kenneth Chiu, Michael J. Lawle
 
 We did also attempt using a 3D-CNN but because a substantial quantity of MOFs had atom counts in the thousands, a 3D-CNN would be largely inefficient. We also hoped to utilize the pre-trained latent space of the InceptionV3 architecture which excels at recognizing tiny differences in edges and features of the images.
 
+<p align="center">
 |![model](https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png)|
 |:--:|
 | <b>Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.</b>|
-
+</p>
 	
 To solve this issue we applied multidimensional scaling (MDS) to the 3D coordinates. This resulted in a 2D matrix of the atom positions which hopefully preserves the geometric properties of the original 3D MOF. While some information is definitely lost from the 3D to 2D reduction, our hope is that it is small enough to not affect our predictions. The formula for classical MDS is as follows:
 
@@ -63,9 +64,10 @@ We used the CoRE MOF 2019 dataset with expanded geometric properties such as hen
 <!-- |![examples](https://i.imgur.com/Jsjq8ZF.png)|
 |:--:| -->
 
+<p align="center">
 |<img src="https://i.imgur.com/Jsjq8ZF.png" width="700"/>|
 |:--:|
-
+</p>
 
 The first method was just passing in the direct MOF coordinates (right). This resulted in low prediction accuracy so we instead passed in the MOF with coordinates outside the unit cell concatenated on as well (middle). This had better results, but still not enough to make the model plausible. The last method we tried was passing in the distance matrix of the MOF to MDS (left). This had the best results with an average error of 85% and a median of 45% but with an error that high we could not publish the results in an academic conference.
 
