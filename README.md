@@ -19,12 +19,19 @@ We did also attempt using a 3D-CNN, but because a substantial quantity of MOFs h
 
 <center>
     
-|<p align="center"><img src="https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png" width="600"/></p>|
+|![examples](https://i.imgur.com/Jsjq8ZF.png)|
 |:--:|
 |<b>Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.</b>|
 
 </center>
 
+<!-- <p align="center">
+<img src="https://i.imgur.com/Dq3smEu.png" width="350" height="200"/>
+</p>
+<p align="center">
+    this is a caption
+    </p>
+ -->
 To solve this issue we applied multidimensional scaling (MDS) to the 3D coordinates. This resulted in a 2D matrix of the atom positions which hopefully preserves the geometric properties of the original 3D MOF. While some information is definitely lost from the 3D to 2D reduction, our hope is that it is small enough to not affect our predictions. The formula for classical MDS is as follows:
 
 \begin{equation} 
@@ -46,9 +53,6 @@ We also tested MDS against other dimensional reduction methods, but we ultimatel
 <p align="center">
 <img src="https://i.imgur.com/Dq3smEu.png" width="350" height="200"/>
 </p>
-<p align="center">
-    this is a caption
-    </p>
 
 We used the CoRE MOF 2019 dataset with expanded geometric properties such as henry’s constant, and surface area for our testing. The dataset contains over 14,000 MOF samples which also makes transfer learning the preferred approach since it excels at problems with low training samples. We used a few different methods of parsing the MOFs with varied results.
 
