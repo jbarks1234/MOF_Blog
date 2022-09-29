@@ -19,7 +19,7 @@ We did also attempt using a 3D-CNN, but because a substantial quantity of MOFs h
 
 <center>
     
-|![examples](https://i.imgur.com/Jsjq8ZF.png)|
+|<img src="https://i.imgur.com/Dq3smEu.png" width="350" height="200"/>|
 |:--:|
 |<b>Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.</b>|
 
