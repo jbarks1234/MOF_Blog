@@ -20,6 +20,8 @@ We did also attempt using a 3D-CNN, but because a substantial quantity of MOFs h
 |<p align="center"><img src="https://miro.medium.com/max/960/1*gqKM5V-uo2sMFFPDS84yJw.png" width="600"/></p>|
 |:--:|
 |<b>Fig. 1 InceptionV3 Architecture. For transfer learning only the final part of the model is trained on the new data.</b>|
+<font size="+1">Image obtained from: https://sh-tsang.medium.com/review-inception-v3-1st-runner-up-image-classification-in-ilsvrc-2015-17915421f77c</font>
+
 To solve this issue we applied multidimensional scaling (MDS) to the 3D coordinates. This resulted in a 2D matrix of the atom positions which hopefully preserves the geometric properties of the original 3D MOF. While some information is definitely lost from the 3D to 2D reduction, our hope is that it is small enough to not affect our predictions. The formula for classical MDS is as follows:
 
 \begin{equation} 
