@@ -61,12 +61,12 @@ We used the CoRE MOF 2019 dataset with expanded geometric properties such as hen
 <p align="center"><img src="https://i.imgur.com/Jsjq8ZF.png" width="500"/></p>
 
 
-The first method was just passing in the direct MOF coordinates (right). This resulted in low prediction accuracy so we instead passed in the MOF with coordinates outside the unit cell concatenated on as well (middle). This had better results, but still not enough to make the model plausible. The last method we tried was passing in the distance matrix of the MOF to MDS (left). This had the best results with an average error of 85% and a median of 45% but with an error that high we could not publish the results in an academic conference.
+The first method was just passing in the direct MOF coordinates (right). This resulted in low prediction accuracy so we instead passed in the MOF with coordinates outside the unit cell concatenated on as well (middle). This had better results, but still not enough to make the model plausible. The last method we tried was passing in the distance matrix of the MOF to MDS (left). This had the best results with an average error of 85% and a median of 45%, but with an error that high we could not publish the results in an academic conference.
 
 <p align="center"><img src="https://i.imgur.com/0ArYOSs.png" width="400"/></p>
 
 
-We still felt like our work was worthwhile so we decided to showcase it in this report so that other researchers might be able to discover a new approach to our methods. Some potential ideas that we thought of but did not pursue were using a 2D image of the full 3D MOF from different points of view with partial alpha values to hopefully represent areas of low density atoms that the model could recognize. If any interested researchers out there would like to build off our work, it is available at: https://github.com/szaman19/Materials-Search.
+We still felt like our work was worthwhile so we decided to showcase it in this report so that other researchers might be able to discover a new approach to our methods. Some potential ideas that we thought of, but did not pursue, were to use a 2D image of the full 3D MOF from different points of view with partial alpha values to hopefully represent areas of low density atom concentrations that the model could recognize. If any interested researchers would like to build off our work, it is available at: https://github.com/szaman19/Materials-Search.
 
 ### Acknowledgments
 This material is based on work supported by the National Science Foundation under grant No. OAC-1940243.
